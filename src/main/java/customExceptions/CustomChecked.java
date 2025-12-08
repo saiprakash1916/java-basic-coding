@@ -1,4 +1,4 @@
-package exceptions;
+package customExceptions;
 
 class InsufficientBalanceException extends Exception{
     public InsufficientBalanceException(String message){
