@@ -9,9 +9,16 @@ public class reverseString {
         Scanner scanner = new Scanner(System.in);
         System.out.print("Enter a String: ");
         String input = scanner.nextLine();
-        char[] strArray = input.toCharArray();
-        for (int i = input.length() - 1; i >= 0; i--){
-            System.out.print(strArray[i]);
+        char[] inputArray = input.toCharArray();
+        int left = 0;
+        int right = inputArray.length - 1;
+        while (left < right){
+            char temp = inputArray[left];
+            inputArray[left] = inputArray[right];
+            inputArray[right] = temp;
+            left ++;
+            right --;
         }
+        System.out.println("Reversed String: " + new String(inputArray));
     }
 }
