@@ -4,7 +4,7 @@ import java.util.*;
 
 /* Find duplicate characters in a string. */
 
-public class duplicateCharacters {
+public class findDuplicateCharacters {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         System.out.print("Enter a String: ");
