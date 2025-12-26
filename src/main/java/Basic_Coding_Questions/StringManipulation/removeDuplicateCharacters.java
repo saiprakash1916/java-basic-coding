@@ -36,7 +36,7 @@ public class removeDuplicateCharacters {
         System.out.println("After remove duplicate characters: " + result);
 
 
-        // By using java 9
+        // By using java 8
         String output = input.chars()
                 .mapToObj(c -> (char) c)
                 .distinct()
