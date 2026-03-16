@@ -1,5 +1,9 @@
 package Core_Problems;
 
+/*
+    Given an array nums and queries [L, R], return the sum of elements between L and R (inclusive).
+ */
+
 public class rangeSum {
     static int[] prefixRangeSum(int[] arr, int[][] range) {
         int n = arr.length;
