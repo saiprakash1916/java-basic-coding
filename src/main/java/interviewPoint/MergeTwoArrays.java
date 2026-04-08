@@ -8,11 +8,11 @@ public class MergeTwoArrays {
         int m = arr2.length;
         int[] merged = new int[n + m];
         int index = 0;
-        for(int i = 0; i < n; i ++){
-            merged[index++] = arr1[i];
+        for (int i : arr1) {
+            merged[index++] = i;
         }
-        for(int i = 0; i < m; i ++){
-            merged[index++] = arr2[i];
+        for (int j : arr2) {
+            merged[index++] = j;
         }
         return merged;
     }
